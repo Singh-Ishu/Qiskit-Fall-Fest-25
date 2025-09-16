@@ -6,6 +6,9 @@ import Qiskit_Logo from '../assets/qiskit logo.svg';
 import IBM_Quantum_Logo from '../assets/IBM Quantum Logo.png';
 import Crop_Future from '../assets/Crop_Future.png';
 import Crop_Einstein from '../assets/Crop_Einstein.png';
+import Crop_Prof from '../assets/Crop_Prof.png';
+import Crop_Thinker from '../assets/Crop_Thinker.png';
+import Team_2 from '../assets/Team_2.png';
 
 const Home: React.FC = () => {
   const events = [
@@ -112,7 +115,7 @@ const Home: React.FC = () => {
             <h1 className="hero-title">
               Qiskit Fall Fest <span className="gradient-text">2025</span>
             </h1>
-            <p className="hero-subtitle">VIT Chennai | Team Quantumplators</p>
+            <p className="hero-subtitle">VIT Chennai | The Quantumplators</p>
             <p className="hero-quote">
               "Quantum computing is not just about processing power; it's about reimagining what's possible."
             </p>
@@ -193,7 +196,7 @@ const Home: React.FC = () => {
               </div>
               <div className="partner-card">
                 <div className="quantumplators-logo">
-                  <Users className="logo-icon" />
+                  <img src={Team_2} alt="Quantumplators" className="logo-icon" />
                   <span>Quantumplators</span>
                 </div>
                 <h3>Team Quantumplators</h3>
@@ -247,7 +250,7 @@ const Home: React.FC = () => {
               </div>
               <div className="speaker-placeholder">
                 <div className="speaker-image">
-                  <Star className="placeholder-icon" />
+                  <img src={Crop_Prof} alt="Speaker" />
                 </div>
                 <h3>Industry Pioneer</h3>
                 <p>Quantum Solutions Architect</p>
@@ -255,7 +258,7 @@ const Home: React.FC = () => {
               </div>
               <div className="speaker-placeholder">
                 <div className="speaker-image">
-                  <Star className="placeholder-icon" />
+                  <img src={Crop_Thinker} alt="Speaker"/>
                 </div>
                 <h3>Research Scientist</h3>
                 <p>Quantum Machine Learning</p>

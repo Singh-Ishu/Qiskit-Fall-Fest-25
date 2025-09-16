@@ -82,7 +82,7 @@ const PastEvent: React.FC = () => {
       <section className="glance-section">
         <div className="container">
           <AnimatedSection>
-            <h2 className="section-title">Quantum Week 2024 – At a Glance</h2>
+            <h2 className="section-title">Quantum Week 2024 - At a Glance</h2>
             <div className="schedule-grid">
               {schedule2024.map((day, index) => (
                 <AnimatedSection key={index} delay={index * 150} animation="fade-up">
