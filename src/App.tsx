@@ -4,12 +4,11 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Organizers from './pages/Organizers';
 import PastEvent from './pages/PastEvent';
-import './styles/global.css';
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

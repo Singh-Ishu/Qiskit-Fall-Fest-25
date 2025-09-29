@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import styles from './AnimatedSection.module.css';
 
 interface AnimatedSectionProps {
   children: React.ReactNode;
@@ -42,10 +43,15 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
     };
   }, [delay]);
 
+  const animationClass = animation === 'fade-up' ? styles.fadeUp :
+                        animation === 'fade-left' ? styles.fadeLeft :
+                        animation === 'fade-right' ? styles.fadeRight :
+                        styles.fadeIn;
+
   return (
     <div 
       ref={ref} 
-      className={`animated-section ${animation} ${isVisible ? 'visible' : ''} ${className}`}
+      className={`${styles.animatedSection} ${animationClass} ${isVisible ? styles.visible : ''} ${className}`}
     >
       {children}
     </div>

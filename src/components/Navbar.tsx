@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Qiskit_Logo from '../assets/qiskit logo.svg';
+import styles from './Navbar.module.css';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,38 +11,38 @@ const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="navbar">
-      <div className="nav-container">
-        <Link to="/" className="nav-logo">
-          <img src={Qiskit_Logo} alt="Qiskit" className="nav-logo-img" />
+    <nav className={styles.navbar}>
+      <div className={styles.navContainer}>
+        <Link to="/" className={styles.navLogo}>
+          <img src={Qiskit_Logo} alt="Qiskit" className={styles.navLogoImg} />
           <span>Qiskit Fall Fest</span>
         </Link>
         
-        <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
+        <div className={`${styles.navMenu} ${isOpen ? styles.active : ''}`}>
           <Link 
             to="/" 
-            className={`nav-link ${isActive('/') ? 'active' : ''}`}
+            className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`}
             onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
           <Link 
             to="/organizers" 
-            className={`nav-link ${isActive('/organizers') ? 'active' : ''}`}
+            className={`${styles.navLink} ${isActive('/organizers') ? styles.active : ''}`}
             onClick={() => setIsOpen(false)}
           >
             Organizers
           </Link>
           <Link 
             to="/past-event" 
-            className={`nav-link ${isActive('/past-event') ? 'active' : ''}`}
+            className={`${styles.navLink} ${isActive('/past-event') ? styles.active : ''}`}
             onClick={() => setIsOpen(false)}
           >
             Past Event
           </Link>
         </div>
         
-        <div className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
+        <div className={styles.navToggle} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X /> : <Menu />}
         </div>
       </div>

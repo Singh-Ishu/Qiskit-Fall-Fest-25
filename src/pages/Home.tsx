@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, MapPin, Users, Star, ArrowRight } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import styles from './Home.module.css';
 import Full_Illustration from '../assets/Full_Illustration.png';
 import Qiskit_Logo from '../assets/qiskit logo.svg';
 import IBM_Quantum_Logo from '../assets/IBM Quantum Logo.png';
@@ -99,50 +100,50 @@ const Home: React.FC = () => {
     }
   ];
   return (
-    <div className="home-page">
+    <div>
       {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-background">
-          <img src={Full_Illustration} alt="Quantum Illustration" className="hero-bg-image" />
-          <div className="hero-overlay"></div>
+      <section className={styles.heroSection}>
+        <div className={styles.heroBackground}>
+          <img src={Full_Illustration} alt="Quantum Illustration" className={styles.heroBgImage} />
+          <div className={styles.heroOverlay}></div>
         </div>
         <div className="container">
-          <AnimatedSection className="hero-content">
-            <div className="hero-logos">
-              <img src={Qiskit_Logo} alt="Qiskit" className="hero-logo" />
-              <img src={IBM_Quantum_Logo} alt="IBM Quantum" className="hero-logo" />
+          <AnimatedSection className={styles.heroContent}>
+            <div className={styles.heroLogos}>
+              <img src={Qiskit_Logo} alt="Qiskit" className={styles.heroLogo} />
+              <img src={IBM_Quantum_Logo} alt="IBM Quantum" className={styles.heroLogo} />
             </div>
-            <h1 className="hero-title">
+            <h1 className={styles.heroTitle}>
               Qiskit Fall Fest <span className="gradient-text">2025</span>
             </h1>
-            <p className="hero-subtitle">VIT Chennai | The Quantumplators</p>
-            <p className="hero-quote">
+            <p className={styles.heroSubtitle}>VIT Chennai | The Quantumplators</p>
+            <p className={styles.heroQuote}>
               "Quantum computing is not just about processing power; it's about reimagining what's possible."
             </p>
-            <div className="hero-details">
-              <div className="hero-detail">
+            <div className={styles.heroDetails}>
+              <div className={styles.heroDetail}>
                 <Calendar className="icon" />
                 <span>October 29-31, 2025</span>
               </div>
-              <div className="hero-detail">
+              <div className={styles.heroDetail}>
                 <MapPin className="icon" />
                 <span>VIT Chennai Campus</span>
               </div>
             </div>
-            <button className="cta-button">
-              Register Now <ArrowRight className="ml-2" />
+            <button className={styles.ctaButton}>
+              Register Now <ArrowRight />
             </button>
           </AnimatedSection>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="about-section">
+      <section className={styles.aboutSection}>
         <div className="container">
           <AnimatedSection>
             <h2 className="section-title">About the Event</h2>
-            <div className="about-content">
-              <div className="about-text">
+            <div className={styles.aboutContent}>
+              <div className={styles.aboutText}>
                 <p>
                   Qiskit Fall Fest 2025 is a premier quantum computing event that brings together students,
                   researchers, and industry professionals to explore the fascinating world of quantum computing.
@@ -155,8 +156,8 @@ const Home: React.FC = () => {
                   beginner or an expert, there's something for everyone at Qiskit Fall Fest 2025.
                 </p>
               </div>
-              <div className="about-image">
-                <img src={Crop_Future} alt="Future of Quantum" className="about-img" />
+              <div className={styles.aboutImage}>
+                <img src={Crop_Future} alt="Future of Quantum" className={styles.aboutImg} />
               </div>
             </div>
           </AnimatedSection>
@@ -164,17 +165,17 @@ const Home: React.FC = () => {
       </section>
 
       {/* Event Highlights */}
-      <section className="highlights-section">
+      <section className={styles.highlightsSection}>
         <div className="container">
           <AnimatedSection>
             <h2 className="section-title">Event Highlights</h2>
-            <div className="highlights-grid">
+            <div className={styles.highlightsGrid}>
               {events.map((event, index) => (
                 <AnimatedSection key={index} delay={index * 100} animation="fade-up">
-                  <div className="highlight-card">
-                    <div className="highlight-icon">{event.icon}</div>
-                    <h3 className="highlight-title">{event.title}</h3>
-                    <p className="highlight-description">{event.description}</p>
+                  <div className={styles.highlightCard}>
+                    <div className={styles.highlightIcon}>{event.icon}</div>
+                    <h3 className={styles.highlightTitle}>{event.title}</h3>
+                    <p className={styles.highlightDescription}>{event.description}</p>
                   </div>
                 </AnimatedSection>
               ))}
@@ -184,19 +185,19 @@ const Home: React.FC = () => {
       </section>
 
       {/* Partners */}
-      <section className="partners-section">
+      <section className={styles.partnersSection}>
         <div className="container">
           <AnimatedSection>
             <h2 className="section-title">Our Partners</h2>
-            <div className="partners-grid">
-              <div className="partner-card">
-                <img src={IBM_Quantum_Logo} alt="IBM Quantum" className="partner-logo" />
+            <div className={styles.partnersGrid}>
+              <div className={styles.partnerCard}>
+                <img src={IBM_Quantum_Logo} alt="IBM Quantum" className={styles.partnerLogo} />
                 <h3>IBM Quantum</h3>
                 <p>Leading quantum computing platform and research</p>
               </div>
-              <div className="partner-card">
-                <div className="quantumplators-logo">
-                  <img src={Team_2} alt="Quantumplators" className="logo-icon" />
+              <div className={styles.partnerCard}>
+                <div className={styles.quantumplatorsLogo}>
+                  <img src={Team_2} alt="Quantumplators" className={styles.logoIcon} />
                   <span>Quantumplators</span>
                 </div>
                 <h3>Team Quantumplators</h3>
@@ -208,19 +209,19 @@ const Home: React.FC = () => {
       </section>
 
       {/* Timeline */}
-      <section className="timeline-section">
+      <section className={styles.timelineSection}>
         <div className="container">
           <AnimatedSection>
             <h2 className="section-title">Event Timeline</h2>
-            <div className="timeline">
+            <div className={styles.timeline}>
               {timelineData.map((day, index) => (
                 <AnimatedSection key={index} delay={index * 200} animation="fade-left">
-                  <div className="timeline-item">
-                    <div className="timeline-marker"></div>
-                    <div className="timeline-content">
-                      <h3 className="timeline-day">{day.day}</h3>
-                      <p className="timeline-date">{day.date}</p>
-                      <ul className="timeline-events">
+                  <div className={styles.timelineItem}>
+                    <div className={styles.timelineMarker}></div>
+                    <div className={styles.timelineContent}>
+                      <h3 className={styles.timelineDay}>{day.day}</h3>
+                      <p className={styles.timelineDate}>{day.date}</p>
+                      <ul className={styles.timelineEvents}>
                         {day.events.map((event, eventIndex) => (
                           <li key={eventIndex}>{event}</li>
                         ))}
@@ -235,34 +236,34 @@ const Home: React.FC = () => {
       </section>
 
       {/* Speakers */}
-      <section className="speakers-section">
+      <section className={styles.speakersSection}>
         <div className="container">
           <AnimatedSection>
             <h2 className="section-title">Distinguished Speakers</h2>
-            <div className="speakers-grid">
-              <div className="speaker-placeholder">
-                <div className="speaker-image">
+            <div className={styles.speakersGrid}>
+              <div className={styles.speakerPlaceholder}>
+                <div className={styles.speakerImage}>
                   <img src={Crop_Einstein} alt="Speaker" />
                 </div>
                 <h3>Dr. Quantum Expert</h3>
                 <p>Quantum Computing Researcher</p>
-                <p className="speaker-bio">Leading expert in quantum algorithms and applications</p>
+                <p className={styles.speakerBio}>Leading expert in quantum algorithms and applications</p>
               </div>
-              <div className="speaker-placeholder">
-                <div className="speaker-image">
+              <div className={styles.speakerPlaceholder}>
+                <div className={styles.speakerImage}>
                   <img src={Crop_Prof} alt="Speaker" />
                 </div>
                 <h3>Industry Pioneer</h3>
                 <p>Quantum Solutions Architect</p>
-                <p className="speaker-bio">Pioneering quantum computing implementations in industry</p>
+                <p className={styles.speakerBio}>Pioneering quantum computing implementations in industry</p>
               </div>
-              <div className="speaker-placeholder">
-                <div className="speaker-image">
+              <div className={styles.speakerPlaceholder}>
+                <div className={styles.speakerImage}>
                   <img src={Crop_Thinker} alt="Speaker"/>
                 </div>
                 <h3>Research Scientist</h3>
                 <p>Quantum Machine Learning</p>
-                <p className="speaker-bio">Advancing quantum machine learning research and development</p>
+                <p className={styles.speakerBio}>Advancing quantum machine learning research and development</p>
               </div>
             </div>
           </AnimatedSection>
@@ -270,35 +271,35 @@ const Home: React.FC = () => {
       </section>
 
       {/* Venue */}
-      <section className="venue-section">
+      <section className={styles.venueSection}>
         <div className="container">
           <AnimatedSection>
             <h2 className="section-title">Venue</h2>
-            <div className="venue-content">
-              <div className="venue-info">
+            <div className={styles.venueContent}>
+              <div className={styles.venueInfo}>
                 <h3>VIT Chennai Campus</h3>
-                <p className="venue-address">
+                <p className={styles.venueAddress}>
                   Vellore Institute of Technology<br />
                   Vandalur-Kelambakkam Road<br />
                   Chennai, Tamil Nadu 600127<br />
                   India
                 </p>
-                <div className="venue-features">
-                  <div className="feature">
-                    <MapPin className="feature-icon" />
+                <div className={styles.venueFeatures}>
+                  <div className={styles.feature}>
+                    <MapPin className={styles.featureIcon} />
                     <span>Easy accessibility via public transport</span>
                   </div>
-                  <div className="feature">
-                    <Users className="feature-icon" />
+                  <div className={styles.feature}>
+                    <Users className={styles.featureIcon} />
                     <span>State-of-the-art conference facilities</span>
                   </div>
                 </div>
               </div>
-              <div className="venue-map">
-                <div className="map-placeholder">
-                  <MapPin className="map-icon" />
+              <div className={styles.venueMap}>
+                <div className={styles.mapPlaceholder}>
+                  <MapPin className={styles.mapIcon} />
                   <p>Interactive map coming soon</p>
-                  <p className="map-coordinates">Lat: 12.8406, Lng: 80.1534</p>
+                  <p className={styles.mapCoordinates}>Lat: 12.8406, Lng: 80.1534</p>
                 </div>
               </div>
             </div>

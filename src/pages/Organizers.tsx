@@ -1,6 +1,7 @@
 import React from 'react';
 import { Github, Instagram, Linkedin, User } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
+import styles from './Organizers.module.css';
 
 const Organizers: React.FC = () => {
   const organizers = [
@@ -77,8 +78,8 @@ const Organizers: React.FC = () => {
   ];
 
   return (
-    <div className="organizers-page">
-      <section className="organizers-hero">
+    <div className={styles.organizersPage}>
+      <section className={styles.organizersHero}>
         <div className="container">
           <AnimatedSection>
             <h1 className="page-title">Meet the <span className="gradient-text">Organizers</span></h1>
@@ -89,30 +90,30 @@ const Organizers: React.FC = () => {
         </div>
       </section>
 
-      <section className="organizers-grid-section">
+      <section className={styles.organizersGridSection}>
         <div className="container">
-          <div className="organizers-grid">
+          <div className={styles.organizersGrid}>
             {organizers.map((organizer, index) => (
               <AnimatedSection key={index} delay={index * 100} animation="fade-up">
-                <div className="organizer-card">
-                  <div className="organizer-photo">
+                <div className={styles.organizerCard}>
+                  <div className={styles.organizerPhoto}>
                     {organizer.image ? (
                       <img src={organizer.image} alt={organizer.name} />
                     ) : (
-                      <User className="placeholder-icon" />
+                      <User className={styles.placeholderIcon} />
                     )}
                   </div>
-                  <h3 className="organizer-name">{organizer.name}</h3>
-                  <p className="organizer-role">{organizer.role}</p>
-                  <div className="social-links">
-                    <a href={organizer.social.github} target="_blank" rel="noopener noreferrer" className="social-link">
-                      <Github className="social-icon" />
+                  <h3 className={styles.organizerName}>{organizer.name}</h3>
+                  <p className={styles.organizerRole}>{organizer.role}</p>
+                  <div className={styles.socialLinks}>
+                    <a href={organizer.social.github} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                      <Github className={styles.socialIcon} />
                     </a>
-                    <a href={organizer.social.instagram} target="_blank" rel="noopener noreferrer" className="social-link">
-                      <Instagram className="social-icon" />
+                    <a href={organizer.social.instagram} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                      <Instagram className={styles.socialIcon} />
                     </a>
-                    <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-link">
-                      <Linkedin className="social-icon" />
+                    <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                      <Linkedin className={styles.socialIcon} />
                     </a>
                   </div>
                 </div>
@@ -122,10 +123,10 @@ const Organizers: React.FC = () => {
         </div>
       </section>
 
-      <section className="team-message">
+      <section className={styles.teamMessage}>
         <div className="container">
           <AnimatedSection>
-            <div className="message-card">
+            <div className={styles.messageCard}>
               <h2>From Team Quantumplators</h2>
               <p>
                 We are a passionate group of quantum computing enthusiasts from VIT Chennai, 
