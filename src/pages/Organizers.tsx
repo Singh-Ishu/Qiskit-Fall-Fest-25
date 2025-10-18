@@ -74,6 +74,26 @@ const Organizers: React.FC = () => {
         instagram: "",
         linkedin: ""
       }
+    },
+    {
+      name: "Ishaan Singh",
+      role: "Web Developer",
+      image: null,
+      social:{
+        github:"",
+        instagram: "",
+        linkedin:  ""
+      }
+    },
+    {
+      name: "Abhinav",
+      role: "Web Developer",
+      image: null,
+      social:{
+        github:"",
+        instagram: "",
+        linkedin:  ""
+      }
     }
   ];
 
