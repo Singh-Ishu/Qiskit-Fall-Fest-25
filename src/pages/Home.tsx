@@ -11,6 +11,8 @@ import Crop_Prof from '../assets/Crop_Prof.png';
 import Crop_Thinker from '../assets/Crop_Thinker.png';
 import Team_2 from '../assets/Team_2.png';
 
+const API_KEY_GOOGLE_MAPS = ""
+
 const Home: React.FC = () => {
   const events = [
     {
@@ -298,7 +300,15 @@ const Home: React.FC = () => {
               <div className={styles.venueMap}>
                 <div className={styles.mapPlaceholder}>
                   <MapPin className={styles.mapIcon} />
-                  <p>Interactive map coming soon</p>
+                  <iframe
+                    title="VIT Chennai map"
+                    width="600"
+                    height="450"
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    allowFullScreen
+                    src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZx9Jjq9ZUjoRLX11GxNCS5Q&key=${API_KEY_GOOGLE_MAPS}`}
+                  />
                   <p className={styles.mapCoordinates}>Lat: 12.8406, Lng: 80.1534</p>
                 </div>
               </div>
