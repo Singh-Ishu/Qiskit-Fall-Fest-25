@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MapPin, Users, Star, ArrowRight } from 'lucide-react';
+import { Calendar, MapPin, Users, ArrowRight } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import styles from './Home.module.css';
 import Full_Illustration from '../assets/Full_Illustration.png';
@@ -46,29 +46,6 @@ const Home: React.FC = () => {
       icon: "🤝"
     }
   ];
-
-  // const timelineData = [
-  //   {
-  //     day: "Day 1",
-  //     date: "October 29, 2025",
-  //     events: [
-  //       "Opening Ceremony - 8:30 AM",
-  //       "Introduction - 9:00 AM",
-  //       "Qiskit Workshop - 2:00 PM",
-  //       "Industry Keynote - 11:30 PM"
-  //     ]
-  //   },
-  //   {
-  //     day: "Day 2",
-  //     date: "November 16, 2025",
-  //     events: [
-  //       "Hackathon Begins - 9:00 AM",
-  //       "Expert Panel - 11:00 AM",
-  //       "Project Presentations - 3:00 PM",
-  //       "Closing Ceremony - 5:00 PM"
-  //     ]
-  //   }
-  // ];
 
 
   const timelineData = [
@@ -166,6 +143,10 @@ const Home: React.FC = () => {
               <div className={styles.aboutImage}>
                 <img src={Crop_Future} alt="Future of Quantum" className={styles.aboutImg} />
               </div>
+            </div>
+            <div className="about-posters">
+              <img src="src/assets/poster_1.jpg" alt="Event Poster 1" className={styles.posterImage} />
+              <img src="src/assets/poster_2.jpg" alt="Event Poster 2" className={styles.posterImage} />
             </div>
           </AnimatedSection>
         </div>
