@@ -2,13 +2,23 @@ import React from 'react';
 import { Github, Instagram, Linkedin, User } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import styles from './Organizers.module.css';
+import Rithika from '../assets/organizers/Rithika.jpg';
+import Raghav from '../assets/organizers/Raghav.jpg';
+import Murali from '../assets/organizers/Murali.jpg';
+import Shriram from '../assets/organizers/Shriram.jpg';
+import Meghna from '../assets/organizers/Meghna.jpg';
+import Kailash from '../assets/organizers/Kailash.jpg';
+import Hari from '../assets/organizers/Kailash.jpg';
+import Aansh from '../assets/organizers/Kailash.jpg';
+import Ishaan from '../assets/organizers/Kailash.jpg';
+import Abhinav from '../assets/organizers/Kailash.jpg';
 
 const Organizers: React.FC = () => {
   const organizers = [
     {
       name: "N.Rithika",
       role: "Lead Organizer",
-      image: null,
+      image: Rithika,
       social: {
         github: "",
         instagram: "",
@@ -18,7 +28,7 @@ const Organizers: React.FC = () => {
     {
       name: "Raghav Jain",
       role: "Co-Organizer",
-      image: null,
+      image: Raghav,
       social: {
         github: "",
         instagram: "",
@@ -28,7 +38,7 @@ const Organizers: React.FC = () => {
     {
       name: "Muralikrishnan Mani",
       role: "Co-Organizer",
-      image: null,
+      image: Murali,
       social: {
         github: "",
         instagram: "",
@@ -38,7 +48,7 @@ const Organizers: React.FC = () => {
     {
       name: "Shriram Narayanan",
       role: "Co-Organizer",
-      image: null,
+      image: Shriram,
       social: {
         github: "",
         instagram: "",
@@ -48,7 +58,7 @@ const Organizers: React.FC = () => {
     {
       name: "Meghna Ravikumar",
       role: "Co-Organizer",
-      image: null,
+      image: Meghna,
       social: {
         github: "",
         instagram: "",
@@ -58,7 +68,7 @@ const Organizers: React.FC = () => {
     {
       name: "Harishankar K Nair",
       role: "Advisory",
-      image: null,
+      image: Hari,
       social: {
         github: "",
         instagram: "",
@@ -68,7 +78,17 @@ const Organizers: React.FC = () => {
     {
       name: "Aansh Sahni",
       role: "Advisory",
-      image: null,
+      image: Aansh,
+      social: {
+        github: "",
+        instagram: "",
+        linkedin: ""
+      }
+    },
+    {
+      name: "Kailash",
+      role: "Advisory",
+      image: Kailash,
       social: {
         github: "",
         instagram: "",
@@ -78,7 +98,7 @@ const Organizers: React.FC = () => {
     {
       name: "Ishaan Singh",
       role: "Web Developer",
-      image: null,
+      image: Ishaan,
       social:{
         github:"",
         instagram: "",
@@ -88,7 +108,7 @@ const Organizers: React.FC = () => {
     {
       name: "Abhinav",
       role: "Web Developer",
-      image: null,
+      image: Abhinav,
       social:{
         github:"",
         instagram: "",
