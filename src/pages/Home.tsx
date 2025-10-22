@@ -74,12 +74,14 @@ const Home: React.FC = () => {
   const timelineData = [
     {
       day: "Day 1",
-      date: "October 29, 2025",
+      date: "October 28, 2025",
       events: [
-        "Opening Ceremony: 8:30 - 11:30",
-        "Workshop: 11:30 - 13:00",
-        "Lunch Session: 13:00 - 14:00",
-        "Challenge-1: 14:00 - 16:00"
+        "Opening Ceremony: 9:00 - 09:30",
+        "Guest Lectures & Invited Talks: 09:30 - 11:30",
+        "Break: 11:30 - 11:45",
+        "Introductory Session: 11:45 - 13:15",
+        "Lunch Session: 13:15 - 14:00",
+        "Gamified Notebook Challenges: 14:00 - 15:30"
       ]
     },
     {
@@ -88,16 +90,17 @@ const Home: React.FC = () => {
       events: [
         "Lecture Sessions: 9:00 - 13:00",
         "Lunch Session: 13:00 - 14:00",
-        "Challenge-2: 14:00 - 16:00",
-        "Hackathon Time: 18:00 - 08:00"
+        "Gamified Notebook Challenges: 14:00 - 15:30",
+        "Hackathon Time: 18:00 - 09:30",
+        "Internal Review Session: 22:00 - 23:00"
       ]
     },
     {
       day: "Day 3",
       date: "October 31, 2025",
       events: [
-        "Breakfast Session: 8:00 - 9:00",
-        "Felicitation & Conclusion: 9:00 - 10:00"
+        "Hackathon Selection: 9:30 - 10:30",
+        "Felicitation & Prize Distribution: 10:30 - 11:00"
       ]
     }
   ];
@@ -132,9 +135,11 @@ const Home: React.FC = () => {
                 <span>VIT Chennai Campus</span>
               </div>
             </div>
-            <button className={styles.ctaButton}>
-              Register Now <ArrowRight />
-            </button>
+            <a href="https://chennaievents.vit.ac.in/technovit" target='_blank'>
+              <button className={styles.ctaButton}>
+                Register Now <ArrowRight />
+              </button>
+            </a>
           </AnimatedSection>
         </div>
       </section>
