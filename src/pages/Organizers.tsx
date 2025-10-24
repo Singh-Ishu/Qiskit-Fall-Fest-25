@@ -9,9 +9,11 @@ import Shriram from "../assets/organizers/Shriram.jpg";
 import Meghna from "../assets/organizers/Meghna.jpg";
 import Kailash from "../assets/organizers/Kailash.jpg";
 import Hari from "../assets/organizers/Harishankar.jpg";
-import Aansh from "../assets/organizers/Kailash.jpg";
-import Ishaan from "../assets/organizers/Kailash.jpg";
-import Abhinav from "../assets/organizers/Kailash.jpg";
+import Aansh from "../assets/organizers/Aansh.jpg";
+import Ishaan from "../assets/organizers/placeholder.jpg";
+import Abhinav from "../assets/organizers/placeholder.jpg";
+import Kashish from "../assets/organizers/Kashish.jpg";
+import Isshaan from "../assets/organizers/placeholder.jpg";
 
 const Organizers: React.FC = () => {
     const organizers = [
@@ -89,6 +91,26 @@ const Organizers: React.FC = () => {
             name: "Kailash",
             role: "Advisory",
             image: Kailash,
+            social: {
+                github: "",
+                instagram: "",
+                linkedin: "",
+            },
+        },
+        {
+            name: "Kashish",
+            role: "Advisory",
+            image: Kashish,
+            social: {
+                github: "",
+                instagram: "",
+                linkedin: "",
+            },
+        },
+        {
+            name: "Isshaan",
+            role: "Advisory",
+            image: Isshaan,
             social: {
                 github: "",
                 instagram: "",
