@@ -11,6 +11,8 @@ import Crop_Prof from "../assets/Crop_Prof.png";
 import Crop_Thinker from "../assets/Crop_Thinker.png";
 import Team_2 from "../assets/Team_2.png";
 import DomeGallery from "../components/DomeGallery";
+import Poster1 from "../assets/poster_1.jpg";
+import Poster2 from "../assets/poster_2.jpg";
 
 const API_KEY_GOOGLE_MAPS = "";
 
@@ -190,12 +192,12 @@ const Home: React.FC = () => {
                         </div>
                         <div className="about-posters">
                             <img
-                                src="src/assets/poster_1.jpg"
+                                src={Poster1}
                                 alt="Event Poster 1"
                                 className={styles.posterImage}
                             />
                             <img
-                                src="src/assets/poster_2.jpg"
+                                src={Poster2}
                                 alt="Event Poster 2"
                                 className={styles.posterImage}
                             />

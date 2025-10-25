@@ -33,33 +33,40 @@ type ItemDef = {
     sizeY: number;
 };
 
+import Image1 from "../assets/gallery/1.jpg";
+import Image2 from "../assets/gallery/2.jpg";
+import Image3 from "../assets/gallery/3.jpg";
+import Image4 from "../assets/gallery/4.jpg";
+import Image5 from "../assets/gallery/5.jpg";
+import Image6 from "../assets/gallery/6.jpg";
+
 const DEFAULT_IMAGES: ImageItem[] = [
     {
-        src: "src/assets/gallery/1.jpg",
+        src: Image1,
         alt: "Meow",
     },
     {
-        src: "src/assets/gallery/2.jpg",
+        src: Image2,
         alt: "Meow Meow",
     },
     {
-        src: "src/assets/gallery/3.jpg",
+        src: Image3,
         alt: "Meow Meow Meow",
     },
     {
-        src: "src/assets/gallery/4.jpg",
+        src: Image4,
         alt: "Meow Meow Meow Meow",
     },
     {
-        src: "src/assets/gallery/5.jpg",
+        src: Image5,
         alt: "Meow Meow Meow Meow Meow",
     },
     {
-        src: "src/assets/gallery/6.jpg",
+        src: Image6,
         alt: "Meow Meow Meow Meow Meow Meow",
     },
     {
-        src: "src/assets/gallery/6.jpg",
+        src: Image6,
         alt: "Meow Meow Meow Meow Meow Meow",
     },
 ];
